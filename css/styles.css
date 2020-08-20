@@ -44,11 +44,6 @@ body {
   display: flex;
   align-items: center;
 }
-.hedder-utils {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .navigation {
   display: flex;
   align-items: center;
@@ -112,7 +107,18 @@ body {
   padding: 0px;
   margin: 0px;
 }
+.hedder-utils {
+  display: flex;
+  box-sizing: border-box;
 
+  margin-left: 0;
+  margin-right: 0;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .contact-list-item-link {
   display: block;
   font-style: normal;
@@ -128,29 +134,31 @@ body {
 .contact-list-item-link:focus {
   color: var(--accent-color);
 }
-/*.contact-list-item {
+.contact-list-item-link {
   display: flex;
-}*/
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-list-item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 .envelope-hedder {
   display: block;
-  color: var(--title-secondery-color);
+  padding: 0px;
+  margin-right: 10px;
+  fill: var(--title-secondery-color);
 }
 .smartphone {
   display: block;
-  color: var(--title-secondery-color);
+  margin-right: 10px;
+  fill: var(--title-secondery-color);
 }
-.contact-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-.contact-list::before {
-  content: '';
-}
+
 .contact-list-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 /* HERRO SECTION */
@@ -256,11 +264,12 @@ body {
 .subtitle-work-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.subtitle-work-item-foto {
+  display: block;
+  margin-bottom: 0px;
+}
 .subtitle-work-item {
   display: block;
-  background: #f5f4fa;
-  border-radius: 4px;
 }
 .subtitle-box {
   display: flex;
@@ -277,7 +286,7 @@ body {
 /*.displayed {
   display: block;
 }*/
-.subtitle-work-h {
+/*.subtitle-work-h {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -285,7 +294,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
-}
+}*/
 
 .section-subtitle {
   padding-top: 94px;
@@ -344,12 +353,41 @@ body {
   text-transform: none;
   color: var(--title-secondery-color);
 }
+.social-links-logo {
+  display: block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.team-social-links-unit:hover,
+.team-social-links-unit:focus {
+  fill: var(--title-dark-theme-color);
+  background-color: var(--accent-color);
+}
+.team-social-links-unit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-social-links-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-social-links-items:not(:last-child) {
+  margin-right: 10px;
+}
 .team-social-links {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 270px;
   height: 44px;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
   padding-left: 32px;
   padding-right: 30px;
 }
@@ -383,14 +421,24 @@ body {
 .client-mark:not(:last-child) {
   margin-right: 30px;
 }
-.client-mark {
+.client-mark-logo {
   display: flex;
   width: 170px;
   height: 90px;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.client-mark-logo-svg {
+  fill: #afb1b8;
+  fill: currentColor;
+}
+.client-mark-logo:hover,
+.client-mark-logo:focus {
+  color: var(--accent-color);
 }
 
 /* Footter */
@@ -411,6 +459,8 @@ body {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--title-dark-theme-color);
+  display: block;
+  margin-right: 70px;
 }
 .footer-address {
   font-family: var(--main-font);
@@ -441,6 +491,27 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
+  display: block;
+  margin-bottom: 20px;
+}
+.social-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link-list-mark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link-list-mark:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-list-mark-fotter {
+  display: flex;
+}
+.social-link-list-mark-fotter-svg {
+  display: block;
 }
 /*-----------------------------------------------*/
 /* ----------PORTFOLIO PAGE-----------*/
