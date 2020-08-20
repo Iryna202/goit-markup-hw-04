@@ -114,6 +114,7 @@ body {
 }
 
 .contact-list-item-link {
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -127,11 +128,26 @@ body {
 .contact-list-item-link:focus {
   color: var(--accent-color);
 }
+/*.contact-list-item {
+  display: flex;
+}*/
+.envelope-hedder {
+  display: block;
+  color: var(--title-secondery-color);
+}
+.smartphone {
+  display: block;
+  color: var(--title-secondery-color);
+}
 .contact-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
+}
+.contact-list::before {
+  content: '';
 }
 .contact-list-item:not(:last-child) {
   margin-right: 50px;
@@ -222,12 +238,17 @@ body {
   margin-bottom: 50px;
   flex-wrap: wrap;
 }
-/*proverit class nije!!!!!!!!*/
 .subtitle {
   display: flex;
   align-items: center;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+.subtitle-item {
+  display: block;
+}
+.subtitle-item:not(:last-child) {
+  margin-right: 30px;
 }
 .subtitle-work {
   display: flex;
@@ -253,12 +274,9 @@ body {
   margin-left: 0px;
   margin-bottom: 30px;
 }
-.img.displayed {
+/*.displayed {
   display: block;
-  width: 65.32px;
-  height: 70px;
-  margin: 0px;
-}
+}*/
 .subtitle-work-h {
   font-weight: 700;
   font-size: 14px;
