@@ -239,6 +239,8 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* WHAT  WE  DO*/
 .title-3 {
   display: inline-block;
   margin-bottom: 10px;
@@ -268,6 +270,23 @@ body {
 .subtitle-work {
   display: flex;
 }
+.subtitle-work-item-text {
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  padding-top: 27px;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-dark-theme-color);
+}
 .subtitle-work-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -277,6 +296,7 @@ body {
 }
 .subtitle-work-item {
   display: block;
+  position: relative;
 }
 .subtitle-box {
   display: flex;
@@ -290,19 +310,6 @@ body {
   margin-left: 0px;
   margin-bottom: 30px;
 }
-/*.displayed {
-  display: block;
-}*/
-/*.subtitle-work-h {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-dark-theme-color);
-}*/
-
 .section-subtitle {
   padding-top: 94px;
   padding-bottom: 0px;
